@@ -8,7 +8,7 @@ Usage:
     
 Arguments:
 
-    birth_year Your birth year in.
+    birth_year -- Your birth year.
   
 Returns:
   + Your Master Number.

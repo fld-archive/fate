@@ -63,26 +63,21 @@ def main(args):
     """
     
     # Error checking
-    if args.born_year <= 0:
+    if args.birth_year <= 0:
         print('You entered incorrect birth year.')
         return
     
-    print('You were born in', args.born_year)
-    print('Your number is', year_basenum(args.born_year))
+    print('You were born in', args.birth_year)
+    print('Your Master Number is', year_basenum(args.birth_year))
 
     print('Your milestone years are:')
-    for year in milestones(args.born_year):
+    for year in milestones(args.birth_year):
         print(' ', year)
 
-    print('Press any key to quit.')
-    
-    # Wait for keypress
-    input()
-    pass
-    
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Calculate milestone years in your life.')
-    parser.add_argument('born_year', type=int, help='Your birth year.')
+    parser.add_argument('birth_year', type=int, help='Your birth year.')
 
     args = parser.parse_args()
 
